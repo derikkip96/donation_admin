@@ -6,7 +6,7 @@
 - Install NPM Dependencies
 - Create a copy of your .env file
 - Generate an app encryption key
-- Create an empty database for our application
+- use same database as donor app
 - in the .env file, add database information to allow Laravel to connect to the database
 - Migrate the database
 - for the purpose of instant payment notifaction you need to turnel your application using ngrok so that you expose it to the internet
