@@ -1,0 +1,618 @@
+/* Style the input fields */
+.tab {
+    display: none;
+}
+#immovable_inline input,#movable_inline input,.user_form,
+#house input {
+  height: auto;
+    border: 1px solid#ced4da;
+    margin: 5px;
+    padding: 10px;
+    width: 400px;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.25em;
+}
+
+/* Mark input boxes that gets an error on validation: */
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+/* end multi step */
+#house{
+    display: none;
+    align-items: center;
+}
+.btn_yes_active{
+    background-color:#023574 !important;
+    color: white !important;
+}
+.btn_no_active {
+    background-color: #023574 !important;
+    color: white !important;
+}
+.btn_next{
+    background-color: #023574;
+    border: 1px solid black;
+    /* Green border */
+    color: white;
+    padding: 10px;
+    width: 450px;
+    border-radius: 2em;
+}
+#house label{
+    margin: 5px 10px 5px 10px;
+}
+.check-active{
+    display: block;
+}
+.gchoice{
+    overflow: visible;
+}
+.section__dom {
+    display: grid;
+    height: auto !important;
+    flex-shrink: 0;
+    width: 100%;
+}
+.col-4 {
+    padding: 40px ;
+    width: 35%;
+    height: auto;
+}
+.h3{
+    margin-bottom: 1.5em;
+    font-size: 20px;
+    font-weight: 600;
+    /* text-align: center; */
+    line-height: 26px;
+    font-family: Lato,sans-serif;
+}
+.mt-lg {
+    margin-top: calc(2*var(--space-unit));
+    font-size: .875rem;
+    line-height: 18px;
+}
+.section__dom-container {
+    width: 100%;
+    height: auto;
+    background:#496E9E;
+}
+.section__dom {
+    display: flex;
+}
+/* Add some margins for each label */
+
+.inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.col-6{
+    width: 50%;
+}
+#btn_movable,#btn_immovable {
+    display: none;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: white;
+    background-color: #023272;
+    border-radius: 2em;
+    padding: 10px;
+
+}
+#immovable_inline,#movable_inline {
+    display: none;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+#immovable_inline label, #movable_inline label {
+    margin: 5px 10px 5px 10px;
+}
+.btn-group input {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    outline:none;
+    /* background-color: #ffff; */
+    /* Green background */
+    border: 1px solid black;
+    /* Green border */
+    color: black;
+    /* White text */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+}
+.btn-group-nav{
+     cursor: pointer;
+     float: left;
+}
+.btn_grp{
+     margin-bottom: 2em;
+     margin-top: 2em;
+
+}
+#btn_next{
+    background-color: #023574;
+    border: 1px solid black;
+    /* Green border */
+    color: white;
+    padding: 10px;
+    margin-left:40px;
+    width: 260px;
+    border-radius: 2em;
+
+}
+#btn_prev{
+    background-color: Transparent;
+    border: 1px solid black;
+    /* Green border */
+    color: black;
+    padding: 10px;
+    width: 150px;
+    border-radius: 2em;
+
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#btn_yes_login,#btn_yes_m,#btn_yes,#btn_yes_im{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+#btn_no_login,#btn_no_m,#btn_no_im,#btn_no{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn-group input:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group input:hover {
+    background-color: white;
+    color:black;
+}
+
+/* Add some margins for each label */
+.inline label {
+    margin: 5px 10px 5px 10px;
+}
+.btn_nav{
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+/* Style the input fields */
+.inline input {
+    width: 20em;
+    border-radius: .25rem;
+}
+
+/* Style the submit button */
+@media (max-width: 1530px) {
+    .inline input {
+        margin: 10px 0;
+    }
+
+    .inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-group input {
+         padding-left: 70px;
+         padding-right: 70px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+    }
+
+   #immovable_inline input,
+   #movable_inline input,
+   #house input {
+        padding: 5px;
+        width: auto;
+
+    }
+
+    .btn_next {
+        padding: 5px;
+        width: auto;
+        border-radius: 1em;
+    }
+
+    #btn_next {
+        background-color: #023574;
+        border: 1px solid black;
+        /* Green border */
+        color: white;
+        padding: 10px;
+        margin-left: 20px;
+        width: 200px;
+        border-radius: 2em;
+
+    }
+
+    #btn_prev {
+        background-color: Transparent;
+        border: 1px solid black;
+        /* Green border */
+        color: black;
+        padding: 10px;
+        width: 100px;
+        border-radius: 2em;
+
+    }
+}
+/* Style the submit button */
+@media (max-width: 1300px) {
+    .inline input {
+        margin: 10px 0;
+    }
+
+    .inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-group input {
+         padding-left: 70px;
+         padding-right: 70px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+    }
+
+   #immovable_inline input,
+   #movable_inline input,
+   #house input {
+        padding: 5px;
+        width: auto;
+
+    }
+
+    .btn_next {
+        padding: 5px;
+        width: auto;
+        border-radius: 1em;
+    }
+
+    #btn_next {
+        background-color: #023574;
+        border: 1px solid black;
+        /* Green border */
+        color: white;
+        padding: 10px;
+        margin-left: 20px;
+        width: 200px;
+        border-radius: 2em;
+
+    }
+
+    #btn_prev {
+        background-color: Transparent;
+        border: 1px solid black;
+        /* Green border */
+        color: black;
+        padding: 10px;
+        width: 100px;
+        border-radius: 2em;
+
+    }
+}
+@media (max-width: 1230px) {
+    .inline input {
+        margin: 10px 0;
+    }
+
+    .inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-group input {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+   #immovable_inline input,
+   #movable_inline input,
+   #house input {
+        padding: 5px;
+        width: auto;
+
+    }
+
+    .btn_next {
+        padding: 5px;
+        width: auto;
+        border-radius: 1em;
+    }
+
+    #btn_next {
+        padding: 5px;
+        margin-left: 0px;
+        width: 100px;
+        border-radius: 1em;
+
+    }
+
+    #btn_prev {
+        padding: 5px;
+        width: 70px;
+        border-radius: 1em;
+
+    }
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+    .inline input {
+        margin: 10px 0;
+    }
+
+    .inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn-group input {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+   #immovable_inline input,
+   #movable_inline input,
+   #house input {
+        padding: 5px;
+        width: auto;
+
+    }
+    .btn_next {
+        padding: 5px;
+        width: auto;
+        border-radius: 1em;
+    }
+      #btn_next {
+          padding: 5px;
+          margin-left: 0px;
+          width: 100px;
+          border-radius: 1em;
+
+      }
+
+      #btn_prev {
+          padding: 5px;
+          width: 70px;
+          border-radius: 1em;
+
+      }
+}
+@media screen and (max-width: 996px) {
+    .col-4 {
+        padding: 5px;
+        width: 100%;
+        height: auto;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .btn-group-nav input, .btn-group input {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+   #immovable_inline input,
+   #movable_inline input,
+   #house input {
+          padding: 5px;
+          width: auto;
+
+      }
+      .btn_next {
+          padding: 5px;
+          width: auto;
+          border-radius: 1em;
+      }
+       #btn_next {
+           padding: 5px;
+           margin-left: 0px;
+           width: 100px;
+           border-radius: 1em;
+
+       }
+
+       #btn_prev {
+           padding: 5px;
+           width: 70px;
+           border-radius: 1em;
+
+       }
+
+}
+@media screen and (max-width: 770px) {
+    .col-4 {
+        padding: 5px;
+        width: 100%;
+        height: auto;
+    }
+     .col-6 {
+         width: 100%;
+     }
+    .btn-group-nav input,
+    .btn-group input {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+      .btn_next {
+          padding: 5px;
+          width: auto;
+          border-radius: 1em;
+      }
+        #btn_next {
+            padding: 5px;
+            margin-left: 0px;
+            width: 100px;
+            border-radius: 1em;
+
+        }
+
+        #btn_prev {
+            padding: 5px;
+            width: 70px;
+            border-radius: 1em;
+
+        }
+   #movable_inline input,
+   #house input {
+          padding: 5px;
+          width: auto;
+
+      }
+
+}
+@media screen and (max-width: 550px) {
+     .col-4 {
+         padding: 5px;
+         width: 100%;
+         height: auto;
+     }
+      .col-6 {
+          width: 100%;
+      }
+    .btn-group-nav input,
+    .btn-group input {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    #immovable_inline input,
+    #movable_inline input,
+    #house input {
+          padding: 5px;
+          width: auto;
+
+      }
+    .btn_next {
+        padding: 5px;
+        width: auto;
+        border-radius: 1em;
+    }
+     #btn_next {
+         padding: 5px;
+         margin-left: 0px;
+         width: 100px;
+         border-radius: 1em;
+
+     }
+
+     #btn_prev {
+         padding: 5px;
+         width: 70px;
+         border-radius: 1em;
+
+     }
+}
+@media screen and (max-width: 360px) {
+    .col-4 {
+        padding: 1px;
+        width: 100%;
+        height: auto;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .btn-group-nav input,
+    .btn-group input {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+    #btn_yes_m,
+    #btn_yes,
+    #btn_yes_im,
+    #btn_no_m,
+    #btn_no_im,
+    #btn_no {
+        border: 1px solid black !important;
+        border-radius: 5px;
+    }
+
+
+    #immovable_inline input,
+    #movable_inline input,
+    #house input {
+        padding: 3px;
+        width: auto;
+
+    }
+
+    .btn_next {
+        padding: 3px;
+        width: auto;
+        border-radius: 1em;
+    }
+
+    #btn_next {
+        padding: 3px;
+        margin-left: 0;
+        width: 70px;
+        border-radius: 1em;
+
+    }
+
+    #btn_prev {
+        padding: 5px;
+        width: 70px;
+        border-radius: 1em;
+
+    }
+
+
+}
+
+.form_input{
+    display: flex;
+}
+
+.contact__details-input {
+    display: flex;
+    align-items: center;
+}
+
+
+ #login_page, #signup_page{
+     display: none;
+ }
+
+
+
+
+
